@@ -9,36 +9,99 @@
     </head>
     <body>
     <!--Start of Navbar-->
-    <div class="header">
-        <nav class="navbar">
-            <div class="nav">
-                <img src="whatever our logo is" class="brand-logo" alt="">
-                <div class="nav-items">
-                    <div class="search">
-                        <input type="text" class="search-box" placeholder="search brand, product">
-                        <button class="search-btn">search</button>
-                    </div>
-                    <a href="#"><img src="might delete" alt=""></a>
-                    <a href="#"><img src="might delete" alt=""></a>
-                </div>
-            </div>
-            </nav>
-            <ul class="links-container">
-                <li class="link-item"><a href="#" class="link">Home</a></li>
-                <li class="link-item"><a href="shop.html" class="link">Shop</a></li>
-                <li class="link-item"><a href="#" class="link">About</a></li>
-                <li class="link-item"><a href="#" class="link">Sign In</a></li>
-                <li class="link-item"><a href="#" class="link">Your Orders</a></li>
-            </ul>
-        </div>
+        <header>
+          <a href="#" class="logo">LOGO</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </header>
+        <section class="banner"></section>
+        <script type="text/javascript">
+          window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+          })
+        </script>
         <!--End of Navbar-->
+
+        <!--start of Intro-->
+        <div class="header">
+          <section class="intro">
+        <img src="images/blue dress monkey.jfif" alt="intro image">
+        <p class="i-txt">
+          Are you tired of seeing your monkey naked? Then get some drip fo yo
+          chimp! Yo monkey needs drip and Dripanzees has you covered!
+        </p>
+          </section>
+        </div>
+        <!--end of Intro-->
+
+        <!--Start of review carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/customer review.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/MicrosoftTeams-image.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!--End of review carousel-->
+
+        <!--Start of Recommended-->
+        <div class="container">
+          <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card">
+             <img src="images/black suit monkey.jfif" alt="" class="card-img-top">
+             <div class="card-body">
+               <h5 class="card-title">Black Monkey Suit</h5>
+               <p class="card-text">This suit iss really cool and its black and its for monkeys so yeah buy it</p>
+             </div>
+             </div>
+            </div>
+          </div>
+        </div> 
+
+        <!--end of recommended-->
+        
         <!--Start of Footer-->
         <footer>
-        <div class="container-fluid paddin
-        g">
+        <div class="container-fluid padding ">
             <div class="row text-center">
               <div class="col-sm-3">
-                <hr class="light">
                 <div class="font-awesome">
                   <a href="https://www.facebook.com/catfishcabinjackson"><i class="fab fa-facebook"></i></a>
                   <a href="https://www.yelp.com/biz/catfish-cabin-jackson-2"><i class="fab fa-twitter"></i></a>
@@ -46,29 +109,23 @@
                 </div>
               </div>
               <div class="col-sm-2">
-                <hr class="light">
                 <div class="footer-text">
-                  <p>Address:[CLASSIFIED]</p>
-                  <p>Location:[CLASSIFIED]</p>
+                  <p class="footer-words">Address:[CLASSIFIED]</p>
+                  <p class="footer-words">Location:[CLASSIFIED]</p>
                 </div>
               </div>
-              <div class="col-sm-2">
-                <hr class="light">
-                <div class="footer-text">
-                  <p>Contact Info:</p>
-                  <p>Phone: 1-800-420-6969</p>
-                  <p>Email: Dripanzees@gmail.com</p>
-                </div>
-                </div>
-                <div class="col-sm-2">
-                    <hr class="light">
+              <div class="col-sm-3 footer-text footer-text">
+                  <p class="footer-words">Contact Info:</p>
+                  <p class="footer-words">Phone: 1-800-420-6969</p>
+                  <p class="footer-words">Email: Dripanzees@gmail.com</p>
+              </div>
+                <div class="col-sm-1">
                     <div class="footer-text">
                       <p><i class="far fa-copyright"></i> Dripanzees</p>
                     </div>
               </div>
               <div class="col-sm-3">
-                <hr class="light">
-                <img src="images/Screenshot_20220120-101847_Chrome.jpg">
+                <img src="images/Screenshot_20220120-101847_Chrome.jpg" class="footer-logo">
               </div>
             </div>
           </div>

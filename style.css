@@ -3,115 +3,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', sans-serif;
 }
-
-.navbar{
-    position: sticky;
+body{
+    background: #000;
+    min-height: 200vh;
+}
+header{
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #f5f5f5;
-    z-index: 9;
-}
-
-.nav{
-    padding: 10px 10vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
 }
-
-.brand-logo{
-    height: 60px;
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
 }
-
-.nav-items{
+header .logo{
+    position: relative;
+    font-weight: 700;  
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-
-.search{
-    width: 500px;
-    display: flex;
-}
-
-.search-box{
-    width: 80%;
-    height: 40px;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
-    text-transform: capitalize;
-    background: none;
-    color: #a9a9a9;
-    outline: none;
-}
-
-.search-btn{
-    width: 20%;
-    height: 40px;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #383838;
-    color: #fff;
-    text-transform: capitalize;
-    font-size: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.search-box::placeholder{
-    color: #a9a9a9;
-}
-
-.nav-items a{
-    margin-left: 20px;
-}
-
-.nav-items a img{
-    width: 30px;
-}
-.links-container{
-    width: 100%;
-    display: flex;
-    padding: 10px 10vw;
-    justify-content: center;
+header ul li{
+    position: relative;
     list-style: none;
-    border-top: 1px solid #d1d1d1;
-}
 
-.link{
-    text-transform: capitalize;
-    padding: 0 10px;
-    margin: 0 5px;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
     text-decoration: none;
-    color: #383838;
-    opacity: 0.5;
-    transition: .5s;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
 }
-
-.link:hover{
-    opacity: 1;
-}
-.header{
-    min-height: 550px;
-    background-image: url(images/FrijolesCharros.jpeg);
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Dripanzeeslogo.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
 }
 /*====End of Navbar===*/
+/*=====start of intro===*/
+.intro{
+    text-align: center;
+    padding-right: 20%;
+}
+.i-txt{
+    text-align: right;
+}
+
+
+
+/*=====end of intro===*/
+
 /*====Start of Footer===*/
 
 footer {
-    background-color: rgb(36, 53, 77);
+    background-color: rgb(0, 0, 0);
     color: #ffffff;
-    padding-top: 2rem;
     width: 100%;
+    border-style: solid;
+    border-color: #c3a369;
   }
   .column{
       float: left;
@@ -122,42 +98,29 @@ footer {
     display: table;
     clear: both;
   }
-  
-  hr.light {
-    border-top: 1px solid #ffffff;
-    width: 100%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-  }
-  
   footer a {
     color: #ffffff;
   }
-  
-  hr.light-100 {
-    border-top: 1px solid #ffffff;
-    width: 100%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-  }
-  
   .font-awesome {
     font-size: 3em;
-    margin: 2rem;
   }
-  
   .fa-facebook:hover,
   .fa-twitter:hover,
   .fa-yelp:hover {
     color: #b3b3b3;
   }
-  
   .footer-text {
     font-size: 20px;
+    
+}
+  .footer-logo{
+    float: right;
+    width: 60%;
+    height: 6 0%;
   }
-
-
-
+  
+  
+  
 
 
 
