@@ -76,12 +76,17 @@ header.sticky ul li a h2{
 .carousel{
   height: 50%;
   width: 50%;
-  padding-left: 500px;
 }
 .carousel-inner{
  padding-left: 40px;
 }
-
+.bd-example{
+  padding-left: 450px;
+  padding-bottom: 200px;
+}
+.carousel-item img{
+  position: inherit;
+}
 /*==End of Carousel*/
 /*=====start of intro===*/
 /*=====end of intro===*/
@@ -149,7 +154,9 @@ footer {
     height: 200px;
   }
       /*   start of recommended drip    */
-
+    .container{
+      padding-top: 15px;
+    }
 
 
 
