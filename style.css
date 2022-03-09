@@ -6,8 +6,7 @@
     font-family: 'Lobster', sans-serif;
 }
 body{
-    background-image: url(images/geometric\ background.jfif);
-    background-attachment:fixed;
+  background-image: url(images/official.png);
 }
 header{
     position: fixed;
@@ -66,7 +65,12 @@ header.sticky ul li a h2{
 
 /*====End of Navbar===*/
 /*====start of background images===*/
-
+article {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 0px auto;
+}
 /*====end of background images===*/
 /*===Start of Carousel===*/
 .carousel{
@@ -77,13 +81,24 @@ header.sticky ul li a h2{
  padding-left: 40px;
 }
 .bd-example{
-  padding-left: 450px;
+  display: flex;
+ justify-content: center;
+ margin-top: 50%;
 }
 .carousel-item img{
   position: inherit;
 }
 /*==End of Carousel*/
 /*=====start of intro===*/
+.intro{
+  padding-top: 300px;
+  padding-left: 200px;
+  color: white;
+  font-size: 36px;
+}
+.intro-title{
+  font-size: 48px;
+}
 /*=====end of intro===*/
 
 /*====Start of Footer===*/
@@ -94,6 +109,7 @@ footer {
     width: 100%;
     border-style: solid;
     border-color: #c3a369;
+    height: auto;
   }
   .column{
       float: right;
@@ -109,11 +125,6 @@ footer {
   }
   .font-awesome {
     font-size: 3em;
-  }
-  .fa-facebook:hover,
-  .fa-twitter:hover,
-  .fa-instagram:hover {
-    color: #b3b3b3;
   }
   .instagram {
     width: 40px;
@@ -133,12 +144,11 @@ footer {
       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
       box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   }
-  .facebook{
-    background: linear-gradient(to bottom, #000 0%, #000 10%, #fff 5%, #fff 92%, #000 92%, #000 100%);
-  }
+.facebook{
+  background: linear-gradient( to bottom, black 0%, black 10%, white 10%, white, 93%, black 93%, black 100%);
+}
   .footer-text {
     font-size: 17px;
-    
 }
   .footer-logo{
     width: 69%;
@@ -152,6 +162,10 @@ footer {
     align-items: center;
     height: 200px;
   }
+  .responsive{
+    max-width: 100%;
+    height: auto;
+  }
   
       /*   start of recommended drip    */
     .container{
@@ -163,6 +177,8 @@ footer {
       padding-top: 20px;
       padding-bottom: 20px;
     }
+    
+    
       /*   start of recommended drip    */
 
   
