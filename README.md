@@ -1,2 +1,6 @@
 # Dripanzees1
- 
+ Dripanzees is a clothing company for monkeys of all shapes and sizes. Our goal as a company is to make monkeys feel as is they are a part of society one step at a time. By giving monkeys very drippy clothes we hope that they will feel more comfortable in everyday society. Our company mascot, Caesar, was our inspiration to begin this company. We “rescued” him at a very young age, and we worked diligently to make him feel like a human. We at Dripanzees hope to give others the opportunity to do the same with their monkey. As we progress, we hope to expand our franchise further than just clothing.  We have already begun our NFTs for monkeys and we plan to sale monkey vehicles and even monkey houses. 
+
+This website is made to be used by humans with monkey pets or advanced monkeys, like Caesar. All products sold on the website are for monkey use only. Demetris is a common shopper at Dripanzees. He is a very advanced monkey with a PhD in science. He often likes to purchase formal outfits for himself and casual wear for his son Ludwig. The Dripanzees website is easily navigable for him, and he is even teaching his son how to use it. 
+
+Kyle Korth is the group manager. Adolfo Mireles and Jadyn Hunt are both full-stack developers. Going forward we will decide each persons role based on our ability to use php.  
