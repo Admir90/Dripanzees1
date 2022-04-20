@@ -58,41 +58,16 @@
 
 <!--Caesar Info-->
 <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-
-  
-  <div class="carousel-inner ">
-    <div class="carousel-item active">
-      <img src="images/black suit monkey.jfif" alt="Los Angeles" class="d-block w-100 gfg">
-    </div>
-    <div class="carousel-item">
-      <img src="images/blue dress monkey.jfif" alt="Chicago" class="d-block w-100 gfg">
-    </div>
-    <div class="carousel-item">
-      <img src="images/customer review.jpg" alt="New York" class="d-block w-100">
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
 <!-- End Carousel -->
 <!-- Review Form -->
 <br>
 <br>
 <div class="form-container">
-  <form action="action_page.php">
+  <form action="action_page.php" class="form-input">
+    <div>
+      <p class="review-text">Give us a review!</p>
+    </div>
     <div class="row">
       
       <div class="col-75">
@@ -106,9 +81,24 @@
         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
       </div>
     </div>
-    <br>
     
-    <br>
+    <div class="row">
+      <div class="col-75 stars">
+        
+      <label class="rating-label">
+        <p class="rate-us">Rate us</p>
+        <div class="star-center">
+        <input
+          class="rating"
+          max="5"
+          oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
+          style="--value:0"
+          type="range"
+          value="2">
+      </label>
+      </div>
+    </div>
+    </div>
     <div class="row">
       
       <div class="col-75">
@@ -170,11 +160,10 @@
                 </div>
           </div>
           <div class="col-sm-3 logo-div" >
-            <img src="images/Screenshot_20220120-101847_Chrome.jpg" class="footer-logo" >
+            <img src="images/Screenshot_20220120-101847_Chrome - Copy.jpg" class="footer-logo" >
           </div>
         </div>
       </div>
     </footer>
-
 
 </body>
