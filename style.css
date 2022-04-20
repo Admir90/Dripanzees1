@@ -314,8 +314,68 @@ border-radius: 20px;
   line-height: 20px;
   color:red;
 }
-
-
+/* signup css */
+.signupbox{
+  width: 415px;
+  height: 550px;
+  background-color: #c3a369;
+  color: #000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50%,- 50px);
+}
+.signupbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.signupbox input::placeholder {
+  color: black;
+}
+.signupbox input[type="text"], input[type="password"], input[type='tel'] {
+  border: none;
+  border-bottom:1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  font-size:16px;
+}
+.signupbox input[type="submit"] {
+  border:none;
+outline: none;
+height:40px;
+background:#d6249f;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.signupbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: #c3a369;
+  color:#000;
+}
+.signupbox a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 20px;
+  color:blue;
+}
+.singupbox a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+  color:red;
+}
 
 
 
@@ -498,7 +558,7 @@ border-radius: 20px;
 	justify-content: center;
 	align-items: center;
   display: none;
-  
+  transition: ease-in-out;
   
 }
 
@@ -510,7 +570,7 @@ border-radius: 20px;
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
-
+  transition: ease-in-out;
 }
 
 .close {

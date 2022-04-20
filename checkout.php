@@ -1,4 +1,7 @@
-<html lang="en">
+<?php
+include 'header.php'
+?>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,8 +38,9 @@ h2 {
   display:-webkit-flex;
   display:-ms-flexbox;
   display:flex;
-  background:-webkit-linear-gradient(#c5e5e5, #ccddf9);
-  background:linear-gradient(#c9e5e9,#ccddf9);
+
+  position:relative; top:-50px;
+  padding-bottom: 60px;
 }
 .dropdown-select.visible {
   display:block;
@@ -95,6 +99,7 @@ ul li:hover {
   box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
   border-radius:30px;
   z-index:10;
+
 }
 .order-info {
   height:100%;
@@ -123,6 +128,7 @@ ul li:hover {
 }
 .order-table {
     position:relative;
+
 }
 .line {
   height:1px;
@@ -144,6 +150,7 @@ ul li:hover {
   width:100%;
 }
 .pay-btn {
+  height: 50px;
   border:none;
   background:#22b877;
   line-height:2em;
@@ -156,15 +163,35 @@ ul li:hover {
   bottom:25px;
   width:calc(100% - 50px);
   -webkit-transition:all .2s ease;
-          transition:all .2s ease;
+          transition:all .2s ease;      
 }
 .pay-btn:hover {
-  background:#22a877;
+  background:darkgreen;
     color:#eee;
   -webkit-transition:all .2s ease;
           transition:all .2s ease;
 }
-
+.cancel-btn{
+  height: 50px;
+  border:none;
+  background:red;
+  line-height:2em;
+  border-radius:10px;
+  font-size:30px;
+  font-size:1.2rem;
+  color:#fff;
+  cursor:pointer;
+  position:static;
+  bottom:25px;
+  -webkit-transition:all .2s ease;
+          transition:all .2s ease;      
+}
+.cancel-btn:hover{
+  background:darkred;
+    color:#eee;
+  -webkit-transition:all .2s ease;
+          transition:all .2s ease;
+}
 .total {
   margin-top:25px;
   font-size:20px;
@@ -282,6 +309,10 @@ ul li:hover {
     border-radius:0px;
   }
 }
+.overflow: {
+      property: overflow;
+      value: auto;
+}
     </style>
 </head>
 <body>
@@ -312,7 +343,7 @@ ul li:hover {
       
               </table>
               <div class='line'></div>
-              <table class='order-table'>
+              <table class='order-table overflow-auto'>
                 <tbody>
                   <tr>
                     <td><img src='images/Formal Monkey.jfif' class='full-width'></img>
@@ -324,7 +355,7 @@ ul li:hover {
                   </tr>
                   <tr>
                     <td>
-                      <div class='price'>$5000</div>
+                      <br><div class='price'>$5000</div>
                     </td>
                   </tr>
                 </tbody>
@@ -336,14 +367,14 @@ ul li:hover {
                     <td><img src='images/Fancy Monkey.jfif' class='full-width'></img>
                     </td>
                     <td>
-                      <br> <span class='thin'>Monobento</span>
+                      <br> <span class='thin'>Fancy Monkey Hat</span>
                       <br> <span class='thin small'> Color: Brown, Size: s-L</span>
                     </td>
       
                   </tr>
                   <tr>
                     <td>
-                      <div class='price'>$42,000</div>
+                      <br><div class='price'>$42,000</div>
                     </td>
                   </tr>
                 </tbody>
@@ -391,7 +422,7 @@ ul li:hover {
                     </tr>
                   </table>
                   <button class='pay-btn'>Checkout</button>
-      
+                  <button class='cancel-btn'>Cancel</button>
                 </div>
       
               </div>

@@ -1,39 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    </head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body class="Body">
-    <header> 
-        <a href="#" class="logo"> 
-          <img id="nav-logo" src="images/navlogo.jpg">
-        </a> 
-        <h1 class="brand">Dripanzees</h1>
-        <ul>
-          <li><a href="index.html"><h2>Home</h2></a></li>
-          <li><a href="shop.html"><h2>Shop</h2></a></li>
-          <li><a href="about.html"><h2>About</h2></a></li>
-          <li><a href="sign-in.html"><h2>Sign In</h2></a></li>
-        </ul>
-      </header>
-      <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle("sticky", window.scrollY > 0)
-        })
-      </script>
-      <!--End of Navbar-->
+<?php
+    include "header.php";
+?>
+
+
+<?php
+    $mysqli = new mysqli()
+?>
       <!--Shop cards-->
 
       <div class="shop">
@@ -42,21 +14,21 @@
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
            <div class="card">
-            <img class="gfg" src="images/Supreme monkey.jfif" alt="Jewelry" class="card-img-top shop-img">
+            <img class="gfg" src="https://drive.google.com/uc?export=view&id=1LrtLx1KGq1Hp0qtxvrsB2xQVc3y8HKg0" alt="Jewelry" class="card-img-top shop-img">
             <button id="button-1"><h4 class="card-title">Supreme Monkey Coat</h4>
             <p class="card-text">$1,000,000</p></button> 
            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img class="gfg" src="images/northface.png" alt="Casual Wear" class="card-img-top shop-img">
+              <img class="gfg" src="https://drive.google.com/uc?export=view&id=10QbXy0scXdaIw45coHwg5WdI-lEgc1zA" alt="Casual Wear" class="card-img-top shop-img">
               <button id="button-2"><h4 class="card-title">Monkey Northface Jacket</h4>
               <p class="card-text">$9,800</p></button> 
              </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card">
-              <img class="gfg" src="images/monkey t shirt.jfif" alt="Formal Wear" class="card-img-top shop-img">
+              <img class="gfg" src="https://drive.google.com/uc?export=view&id=1FseV_5XdrQN1ZAxBMDDpVC0F3eSyYwp7" alt="Formal Wear" class="card-img-top shop-img">
               <button id="button-3"><h4 class="card-title">Long Tee</h4>
               <p class="card-text">$27,000</p></button> 
              </div>
@@ -66,7 +38,7 @@
       <div class="row g-3">
         <div class="col-12 col-md-6 col-lg-4">
          <div class="card">
-          <img class="gfg" src="images/Formal Monkey.jfif" alt="Shoes" class="card-img-top shop-img">
+          <img class="gfg" src="https://drive.google.com/uc?export=view&id=1BGcjX3jYmorXWjVn90eY4mjakF8_BTqj" alt="Shoes" class="card-img-top shop-img">
           <button id="button-4"><h4 class="card-title">Gray Monkey Suit</h4>
           <p class="card-text">$5000</p></button> 
          </div>
@@ -124,40 +96,9 @@
         </div>
       </div>
 <!--end of shop cards-->
-<!--Footer -->
-<footer>
-  <div class="footer">
-      <div class="row text-center center">
-        <div class="col-sm-3">
-          <div class="font-awesome">
-            <a href="https://www.facebook.com/catfishcabinjackson"><i style="color: #3b5998"class="fab fa-facebook facebook"></i></a>
-            <a href="https://www.yelp.com/biz/catfish-cabin-jackson-2"><i style="color: #1da1f2" class="fab fa-twitter"></i></a>
-            <a href="https://twitter.com/catfish_cabin"><i class="fab fa-instagram instagram" id="instagram-logo"></i></a>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="footer-text">
-            <p class="footer-words">Address:[CLASSIFIED]</p>
-            <p class="footer-words">Location:[CLASSIFIED]</p>
-          </div>
-        </div>
-        <div class="col-sm-3 footer-text footer-text">
-            <p class="footer-words">Contact Info:</p>
-            <p class="footer-words">Phone: 1-800-420-6969</p>
-            <p class="footer-words">Email: Dripanzees@gmail.com</p>
-        </div>
-          <div class="col-sm-1">
-              <div class="footer-text">
-                <p class="copyright"><i class="far fa-copyright"></i> Dripanzees</p>
-              </div>
-        </div>
-        <div class="col-sm-3 logo-div" >
-          <img src="images/Screenshot_20220120-101847_Chrome.jpg" class="footer-logo" >
-        </div>
-      </div>
-    </div>
-  </footer>
-<!--End of Footer-->
+<?php
+    require "footer.php";
+  ?>
 </body>
 </html>
 <!-- java for pop up -->
