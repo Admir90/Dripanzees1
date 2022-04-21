@@ -325,7 +325,7 @@ ul li:hover {
               <table class='order-table'>
                 <tbody>
                   <tr>
-                    <td><img src='images/northface.png' class='full-width'></img>
+                    <td><img src='https://drive.google.com/uc?export=view&id=10QbXy0scXdaIw45coHwg5WdI-lEgc1zA' class='full-width'></img>
                     </td>
                     <td>
                       <br> <span class='thin'>Monkey Northface Jacket</span>
@@ -346,7 +346,7 @@ ul li:hover {
               <table class='order-table overflow-auto'>
                 <tbody>
                   <tr>
-                    <td><img src='images/Formal Monkey.jfif' class='full-width'></img>
+                    <td><img src='https://drive.google.com/uc?export=view&id=1BGcjX3jYmorXWjVn90eY4mjakF8_BTqj' class='full-width'></img>
                     </td>
                     <td>
                       <br> <span class='thin'>Grey Monkey Suit</span>
@@ -364,7 +364,7 @@ ul li:hover {
               <table class='order-table'>
                 <tbody>
                   <tr>
-                    <td><img src='images/Fancy Monkey.jfif' class='full-width'></img>
+                    <td><img src='https://drive.google.com/uc?export=view&id=1n04un-YRec2w9gEzoQOTH7nSWKPMs2OO' class='full-width'></img>
                     </td>
                     <td>
                       <br> <span class='thin'>Fancy Monkey Hat</span>

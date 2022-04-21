@@ -24,7 +24,7 @@
           }
       }
       else if ($_GET['signup'] == "success") {
-              echo "You've successfully signed up!";
+          echo "You did it!";
       }
   ?>
 --->

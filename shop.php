@@ -45,14 +45,14 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
-            <img class="gfg" src="images/black suit monkey.jfif" alt="Our Brand Clothes" class="card-img-top shop-img">
+            <img class="gfg" src="https://drive.google.com/uc?export=view&id=18PsmqEtE3LRxaDOb6n8DGAytk4NxeJPU" alt="Our Brand Clothes" class="card-img-top shop-img">
             <button id="button-5"><h4 class="card-title">Black Monkey Suit</h4>
             <p class="card-text">$8000</p></button> 
            </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="card">
-            <img class="gfg" src="images/blue dress monkey.jfif" alt="Hats" class="card-img-top shop-img">
+            <img class="gfg" src="https://drive.google.com/uc?export=view&id=1jKwwGbNZk4qssbEOed92EInHzctQqFg0" alt="Hats" class="card-img-top shop-img">
              <button id="button-6"><h4 class="card-title">Blue Monkey Dress</h4>
            <p class="card-text">$9999</p></button> 
            </div>
@@ -65,7 +65,7 @@
     <div class="row g-3">
       <div class="col-12 col-md-6 col-lg-4">
        <div class="card">
-        <img class="gfg" src="images/Fancy Monkey.jfif" alt="Shoes" class="card-img-top shop-img">
+        <img class="gfg" src="https://drive.google.com/uc?export=view&id=1n04un-YRec2w9gEzoQOTH7nSWKPMs2OO" alt="Shoes" class="card-img-top shop-img">
         <button id="button-7"><h4 class="card-title">Fancy Monkey Hat</h4>
         <p class="card-text">$42,000</p></button> 
 
@@ -74,24 +74,59 @@
 
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card">
-          <img class="gfg" src="images/Minecraft Monkey.jfif" alt="Our Brand Clothes" class="card-img-top shop-img">
+          <img class="gfg" src="https://drive.google.com/uc?export=view&id=1om7c3BzWFbg4KGnLAjCtlfVTRDAx-3hG" alt="Our Brand Clothes" class="card-img-top shop-img">
           <button id="button-8"><h4 class="card-title">Monkey Minecraft Hat</h4>
           <p class="card-text">$69,000</p></button> 
          </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card">
-          <img class="gfg" src="images/Royalty Monkey.jfif" alt="Hats" class="card-img-top shop-img">
+          <img class="gfg" src="https://drive.google.com/uc?export=view&id=1-0x7t1ueT60xyOBnSS2F9QSXcWwWF9Sx" alt="Hats" class="card-img-top shop-img">
           <button id="button-9"><h4 class="card-title">Monkey Royalty Hat</h4>
           <p class="card-text">$9999999999</p></button> 
          </div>
       </div>
   </div>
-</div>       
+  <br>
 </div>
+<div class="container-4">
+      <div class="row g-3">
+        <div class="col-12 col-md-6 col-lg-4">
+         <div class="card">
+          <img class="gfg" src="https://drive.google.com/uc?export=view&id=1lqE7xQR5eHdnFfyPzfimTSeRLSNUe2Rn" alt="Shoes" class="card-img-top shop-img">
+          <button id="button-4"><h4 class="card-title">Gucci Monkey Tracksuit</h4>
+          <p class="card-text">$500,000</p></button> 
+         </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="gfg" src="https://drive.google.com/uc?export=view&id=1IiF7qW2DQmZmGlO8aO7E_5EARfLVYOSH" alt="Our Brand Clothes" class="card-img-top shop-img">
+            <button id="button-5"><h4 class="card-title">Baby Monkey Outfit</h4>
+            <p class="card-text">52 Bitcoins</p></button> 
+           </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img class="gfg" src="https://drive.google.com/uc?export=view&id=1wkcPhYM0RaVMPc8MBKl5c4HSwGuB68nv" alt="Hats" class="card-img-top shop-img">
+             <button id="button-6"><h4 class="card-title">New York Monkey Outfit</h4>
+           <p class="card-text">$6.022 x 10^23</p></button> 
+           </div>
+
+        </div>
+    </div>
+  </div>      
+</div>
+
       </div>
+      
       <div class="bg-modal">
         <div class="modal-contents">
+          <img src="images/" alt="">
+          <h3>THE northface jacket!</h3>
+      <form method="POST" action="./includes/cart.inc.php">
+        <input type="number" value="1" min="1" name="quantity" max="15">
+          <button type="submit" name="cart">Add to cart!</button>
+      </form>
           <div class="close">+</div>
         </div>
       </div>

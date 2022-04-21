@@ -43,7 +43,7 @@ header ul{
 header ul li{
     position: relative;
     list-style: none;
-    padding-left: 30px;
+    padding-left: 20px;
 
 }
 header ul li a {
@@ -247,6 +247,9 @@ color: #c3ac69;
 font-size: 64px;
 padding-right: 150px; 
 }
+.container-4{
+  padding-top: 400px;
+}
 /*====End of Footer===*/
 /* signup */
 
@@ -317,7 +320,7 @@ border-radius: 20px;
 /* signup css */
 .signupbox{
   width: 415px;
-  height: 550px;
+  height: 400px;
   background-color: #c3a369;
   color: #000;
   top: 50%;
@@ -552,7 +555,7 @@ border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8); 
 	width: 100%;
 	height: 100%;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	display: flex;
 	justify-content: center;
@@ -563,14 +566,13 @@ border-radius: 20px;
 }
 
 .modal-contents {
-	height: 300px;
-	width: 500px;
+	height: 1000px;
+	width: 800px;
 	background-color: #c3ac69;
-	text-align: center;
+	text-align: right;
 	padding: 20px;
 	position: relative;
 	border-radius: 4px;
-  transition: ease-in-out;
 }
 
 .close {
@@ -588,7 +590,6 @@ border-radius: 20px;
   justify-content: center;
   padding-top: 25%;
 }
-
 
 /* end of pop up */
 @media screen and (max-width: 575px){

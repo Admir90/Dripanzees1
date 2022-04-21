@@ -15,13 +15,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dripanzees</title>
 </head>
     <body class="Body">
     <!--Start of Navbar-->
           <header>  
           <a href="index.php" class="logo"> 
-            <img id="nav-logo" src="images/navlogo.jpg">
+            <img id="nav-logo" src="https://drive.google.com/uc?export=view&id=1Nj1ceND7sR6Z1TRS1upNYGbvoaNsW0mx">
           </a>
           <h1 class="brand">Dripanzees</h1>
           <nav>
@@ -30,6 +30,7 @@
               <li><a href="shop.php"><h2>Shop</h2></a></li>
               <li><a href="about.php"><h2>About</h2></a></li>
               <li><a href="sign-in.php"><h2>Sign In</h2></a></li>
+              <li><a href="checkout.php"><h2>Checkout</h2></a></li>
             </ul>
           </nav>
         </header>
