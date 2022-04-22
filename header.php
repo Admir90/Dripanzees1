@@ -1,3 +1,8 @@
+<?php 
+    if (session_status() === PHP_SESSION_NONE){
+        session_start();
+    }
+  ?>
 
 <!DOCTYPE html>
 <html>
@@ -30,7 +35,9 @@
               <li><a href="shop.php"><h2>Shop</h2></a></li>
               <li><a href="about.php"><h2>About</h2></a></li>
               <li><a href="sign-in.php"><h2>Sign In</h2></a></li>
-              <li><a href="checkout.php"><h2>Checkout</h2></a></li>
+              <li <?php if(!isset($_SESSION['userId'])){echo 'style="display: none;"';}?>>
+                        <a class="nav-link" href="checkout.php">Checkout</a>
+                    </li>
             </ul>
           </nav>
         </header>

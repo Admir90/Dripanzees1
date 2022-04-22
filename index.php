@@ -22,21 +22,21 @@
           <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4">
              <div class="card">
-              <img class="gfg" src="images/northface.png" alt="Monkey Emoji Chain" class="card-img-top">
+              <img class="gfg" src="https://drive.google.com/uc?export=view&id=10QbXy0scXdaIw45coHwg5WdI-lEgc1zA" alt="Monkey Emoji Chain" class="card-img-top">
               <h5 class="card-title">Monkey Northface Jacket</h5>
               <p class="card-text">2,000+ units sold</p> 
              </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card">
-                <img class="gfg" src="images/Formal Monkey.jfif" alt="Monkey Emoji Chain" class="card-img-top">
+                <img class="gfg" src="https://drive.google.com/uc?export=view&id=1BGcjX3jYmorXWjVn90eY4mjakF8_BTqj" alt="Monkey Emoji Chain" class="card-img-top">
                 <h5 class="card-title">Gray Monkey Suit</h5>
                 <p class="card-text">1,500+ units sold</p> 
                </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
               <div class="card">
-                <img class="gfg" src="images/Supreme monkey.jfif" alt="Monkey Emoji Chain" class="card-img-top">
+                <img class="gfg" src="https://drive.google.com/uc?export=view&id=1LrtLx1KGq1Hp0qtxvrsB2xQVc3y8HKg0" alt="Monkey Emoji Chain" class="card-img-top">
                 <h5 class="card-title">Supreme Monkey Jacket</h5>
                 <p class="card-text">500+ units sold</p> 
                </div>

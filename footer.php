@@ -29,7 +29,7 @@
                     </div>
               </div>
               <div class="col-sm-3 logo-div" >
-                <img src="images/Screenshot_20220120-101847_Chrome.jpg" class="footer-logo" >
+                <img src="https://drive.google.com/uc?export=view&id=1Nj1ceND7sR6Z1TRS1upNYGbvoaNsW0mx" class="footer-logo" >
               </div>
             </div>
           </div>

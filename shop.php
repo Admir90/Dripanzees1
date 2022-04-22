@@ -111,13 +111,11 @@
              <button id="button-6"><h4 class="card-title">New York Monkey Outfit</h4>
            <p class="card-text">$6.022 x 10^23</p></button> 
            </div>
-
         </div>
     </div>
   </div>      
 </div>
 
-      </div>
       
       <div class="bg-modal">
         <div class="modal-contents">
@@ -130,6 +128,7 @@
           <div class="close">+</div>
         </div>
       </div>
+      <button><a href="https://datadev.devcatalyst.com/~mahs_welovecats/">Another secret button</a></button> 
 <!--end of shop cards-->
 <?php
     require "footer.php";

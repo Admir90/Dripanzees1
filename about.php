@@ -9,7 +9,7 @@
 <br>
 <div class="container">
   <div>
-<img src="images/Caesar.jfif" class="caesar">
+<img src="https://drive.google.com/uc?export=view&id=1U51uivgLmZBCIt_dVVtfP-e7KQqE8yWC" class="caesar">
   </div>
   <br>
   <div style="background-color: #000; margin-right: 25%; margin-left: 25%;">
@@ -27,21 +27,21 @@
 <br>
 <br>
 <div class="form-container">
-  <form action="action_page.php" class="form-input">
+  <form action="connect.php" method="POST" class="form-input">
     <div>
       <p class="review-text">Give us a review!</p>
     </div>
     <div class="row">
       
       <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input type="text" id="fname" name="firstName" placeholder="Your name..">
       </div>
     </div>
     <br>
     <div class="row">
       
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input type="text" id="lname" name="lastName" placeholder="Your last name..">
       </div>
     </div>
     
@@ -53,6 +53,7 @@
         <div class="star-center">
         <input
           class="rating"
+          name="rating"
           max="5"
           oninput="this.style.setProperty('--value', `${this.valueAsNumber}`)"
           style="--value:0"
@@ -65,17 +66,18 @@
     <div class="row">
       
       <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
       </div>
     </div>
     <div class="row">
+      
       <input type="submit" value="Submit" class="submit-btn">
     </div>
   </form>
 </div>
 <br>
 <br>
-
+<button><a href="https://datadev.devcatalyst.com/~mahs_minions/index.php">Is this secret too?</a></button>
 <script>
   const btn = document.querySelector("button");
   const post = document.querySelector(".post");
@@ -91,6 +93,8 @@
     return false;
   }
 </script>
+
+
 
 <!-- End Review Form -->
 

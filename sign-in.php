@@ -14,7 +14,7 @@
       <div class="loginbox">
         <h3>We missed you :/</h3>
         <br>
-        <img src="images/golf monkey.jfif" alt="greeting monkey" class="avatar">
+        <img src="https://drive.google.com/uc?export=view&id=1b8-iPwmt7RcDySk4ruSxe7y5VPCd05-C" alt="greeting monkey" class="avatar">
         <?php
                 if (isset($_SESSION['userId'])) {
                     echo '<form action="includes/logout.inc.php" method="POST">

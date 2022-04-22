@@ -370,7 +370,7 @@ ul li:hover {
                       <br> <span class='thin'>Fancy Monkey Hat</span>
                       <br> <span class='thin small'> Color: Brown, Size: s-L</span>
                     </td>
-      
+    
                   </tr>
                   <tr>
                     <td>
@@ -379,6 +379,7 @@ ul li:hover {
                   </tr>
                 </tbody>
               </table>
+              <br>
               <div class='line'></div>
               <div class='total'>
                 <span style='float:left;'>
