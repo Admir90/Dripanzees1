@@ -7,9 +7,9 @@
             <div class="row text-center center">
               <div class="col-sm-3">
                 <div class="font-awesome">
-                  <a href="https://www.facebook.com/catfishcabinjackson"><i style="color: #3b5998"class="fab fa-facebook facebook"></i></a>
-                  <a href="https://www.yelp.com/biz/catfish-cabin-jackson-2"><i style="color: #1da1f2" class="fab fa-twitter"></i></a>
-                  <a href="https://twitter.com/catfish_cabin"><i class="fab fa-instagram instagram" id="instagram-logo"></i></a>
+                  <a><i style="color: #3b5998"class="fab fa-facebook facebook"></i></a>
+                  <a><i style="color: #1da1f2" class="fab fa-twitter"></i></a>
+                  <a><i class="fab fa-instagram instagram" id="instagram-logo"></i></a>
                 </div>
               </div>
               <div class="col-sm-2">
@@ -34,3 +34,5 @@
             </div>
           </div>
         </footer>
+</body>
+</html>

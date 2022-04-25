@@ -1,6 +1,7 @@
 <?php 
     if (session_status() === PHP_SESSION_NONE){
         session_start();
+        $connect = mysqli_connect("localhost:3306", "mahs_mozzarelamen", "mustangs", "mahs_mozzarelamen");
     }
   ?>
 
@@ -25,12 +26,13 @@
     <body class="Body">
     <!--Start of Navbar-->
           <header>  
-          <a href="index.php" class="logo"> 
-            <img id="nav-logo" src="https://drive.google.com/uc?export=view&id=1Nj1ceND7sR6Z1TRS1upNYGbvoaNsW0mx">
-          </a>
-          <h1 class="brand">Dripanzees</h1>
+          <a id="logo" href="index.php"><img id="nav-logo" src="https://drive.google.com/uc?export=view&id=1Nj1ceND7sR6Z1TRS1upNYGbvoaNsW0mx"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
           <nav>
             <ul>
+              <li><a href="index.php"><h2 class="brand">Dripanzees</h2></a></li>
               <li><a href="index.php"><h2>Home</h2></a></li>
               <li><a href="shop.php"><h2>Shop</h2></a></li>
               <li><a href="about.php"><h2>About</h2></a></li>
@@ -41,7 +43,6 @@
             </ul>
           </nav>
         </header>
-        </html>
         <script type="text/javascript">
           window.addEventListener("scroll", function(){
             var header = document.querySelector("header");

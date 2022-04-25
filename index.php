@@ -1,5 +1,36 @@
 <?php
     include 'header.php';
+
+    if(isset($_POST["add-to-cart"])) {
+      if(isset($_SESSION["shopping-cart"])) {
+        $item_array_id = array_column($_SESSION["shopping-cart"], "item_id");
+        if(!in_array($_GET["id"], $item_array_id))
+        {
+            $count = count($_SESSION["shopping-cart"]);
+            $item_array = array(
+              'item_id'         =>  $_GET["productId"],
+              'item_name'       =>  $_POST["hidden-name"],
+              'item_price'      =>  $_POST["hidden-price"],
+              'item_quantity'   =>  $_POST["quantity"]
+            );
+            $_SESSION["shopping-cart"] [$count] = $item_array;
+        }
+        else {
+            echo '<script>alert("Item Already Added")</script>';
+            echo '<script>window.location="index.php"</script>';
+
+        }
+      }
+      else {
+        $item_array = array (
+          'item_id'         =>  $_GET["productId"],
+          'item_name'       =>  $_POST["hidden-name"],
+          'item_price'      =>  $_POST["hidden-price"],
+          'item_quantity'   =>  $_POST["quantity"]
+        );
+        $_SESSION["shopping-cart"] [0] = $item_array;
+      }
+    }
 ?>
         <!---Two column section-->
         <div  class="intro" class="container-fluid padding">
@@ -16,6 +47,31 @@
             </div>
             
 
+<?php
+$query = "SELECT * FROM products ORDER BY id ASC";
+$result = mysqli_query($connect, $query);
+if(mysqli_num_rows($result) > 0)
+{
+  while($row = mysqli_fetch_array($result))
+    {
+?>
+<div class="product-1">
+  <form method="post" action="index.php?action=add&id=<?php echo $row["productId"]; ?>">
+  <div class="prod-img-1">
+    <img src="<?php echo $row["productImage"]; ?>" alt="supremeMonkey">
+    <h4><?php echo $row["productName"]; ?></h4>
+    <h4><?php echo $row["productPrice"]; ?></h4>
+    <input type="number" value="1" min="1" name="quantity" max="15">
+    <input type="hidden" name="hidden-name" value="<?php echo $row["productName"]; ?>">
+    <input type="hidden" name="hidden-price" value="<?php echo $row["productPrice"]; ?>">
+    <input type="submit" name="add-to-cart" value="Add to Cart">
+  </div>
+  </form>
+  <?php
+    }
+  }
+  ?>
+</div>
 
 
 
@@ -73,4 +129,3 @@
     <?php
     require "footer.php";
   ?>
-</html>

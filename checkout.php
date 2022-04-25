@@ -345,6 +345,16 @@ ul li:hover {
               <div class='line'></div>
               <table class='order-table overflow-auto'>
                 <tbody>
+                  <?php
+                  $conn = mysqli_connect("localhost", "root", "", "mahs_mozzarelamen");
+                  if ($conn-> connect_error) {
+                    die("Connection failed:". $conn-> connect_error);
+                  }
+
+                  $sql = "SELECT cardNum, cardHolder, exp, cvc FROM checkout";
+                  $result = $conn-> query($sql);
+
+                  ?>
                   <tr>
                     <td><img src='https://drive.google.com/uc?export=view&id=1BGcjX3jYmorXWjVn90eY4mjakF8_BTqj' class='full-width'></img>
                     </td>
@@ -376,12 +386,14 @@ ul li:hover {
                     <td>
                       <br><div class='price'>$42,000</div>
                     </td>
+                    <hr>
                   </tr>
                 </tbody>
               </table>
               <br>
               <div class='line'></div>
               <div class='total'>
+            
                 <span style='float:left;'>
                   <div class='thin dense'>DISC 0%</div>
                   <div class='thin dense'>Delivery</div>
