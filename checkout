@@ -1,17 +1,4 @@
-<?php
-include 'header.php';
-?>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="checkout.css">
-
-</head>
-<body>
-<div class='container'> 
+ <div class='container'> 
         <div class='window'>
           <div class='order-info'>
             <div class='order-info-content'>
@@ -28,7 +15,7 @@ include 'header.php';
                       {
                   
                 ?>
-                <tr class="blob">
+                <tr>
                     <td><img src="<?php echo $row["productImage"]; ?>"></td> 
                     <td><?php echo $values["item_name"]; ?></td>
                     <td><?php echo $values["item_quantity"]; ?></td>
@@ -40,7 +27,7 @@ include 'header.php';
                 </tbody>
               </table>
               <div class='line'></div>
-              <table class='order-table overflow-auto'>
+              <!-- <table class='order-table overflow-auto'>
                 <tbody>
                   <tr>
                     <td><img src='https://drive.google.com/uc?export=view&id=1BGcjX3jYmorXWjVn90eY4mjakF8_BTqj' class='full-width'></img>
@@ -55,7 +42,7 @@ include 'header.php';
                       <br><div class='price'>$5000</div>
                     </td>
                   </tr>
-                </tbody>
+                </tbody> 
               </table>
               <div class='line'></div>
               <table class='order-table'>
@@ -79,7 +66,7 @@ include 'header.php';
               </table>
               <br>
               <div class='line'></div>
-              <div class='total'>
+              <div class='total'> --->
               <?php
                     $total = $total + ($values["item_quantity"] * $values["item_price"]);
                       }
@@ -109,6 +96,7 @@ include 'header.php';
                   </table>
                   <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
                   Card Number
+                  <form method="POST">
                   <input class='input-field'></input>
                   Card Holder
                   <input class='input-field'></input>
@@ -122,7 +110,6 @@ include 'header.php';
                       </td>
                     </tr>
                   </table>
-                  <form method="POST">
                   <button class='pay-btn' type="submit">Checkout</button>
                 </form>
                   <button class='cancel-btn'>Cancel</button>
@@ -131,51 +118,3 @@ include 'header.php';
               </div>
             </div>
       </div> 
-</body>
-</html>
-<script>
-    var cardDrop = document.getElementById('card-dropdown');
-var activeDropdown;
-cardDrop.addEventListener('click',function(){
-  var node;
-  for (var i = 0; i < this.childNodes.length-1; i++)
-    node = this.childNodes[i];
-    if (node.className === 'dropdown-select') {
-      node.classList.add('visible');
-       activeDropdown = node; 
-    };
-})
-
-window.onclick = function(e) {
-  console.log(e.target.tagName)
-  console.log('dropdown');
-  console.log(activeDropdown)
-  if (e.target.tagName === 'LI' && activeDropdown){
-    if (e.target.innerHTML === 'Master Card') {
-      document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/2vbqk5lcpi7hjoc/MasterCard_Logo.svg.png';
-          activeDropdown.classList.remove('visible');
-      activeDropdown = null;
-      e.target.innerHTML = document.getElementById('current-card').innerHTML;
-      document.getElementById('current-card').innerHTML = 'Master Card';
-    }
-    else if (e.target.innerHTML === 'American Express') {
-         document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/f5hyn6u05ktql8d/amex-icon-6902.png';
-          activeDropdown.classList.remove('visible');
-      activeDropdown = null;
-      e.target.innerHTML = document.getElementById('current-card').innerHTML;
-      document.getElementById('current-card').innerHTML = 'American Express';      
-    }
-    else if (e.target.innerHTML === 'Visa') {
-         document.getElementById('credit-card-image').src = 'https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png';
-          activeDropdown.classList.remove('visible');
-      activeDropdown = null;
-      e.target.innerHTML = document.getElementById('current-card').innerHTML;
-      document.getElementById('current-card').innerHTML = 'Visa';
-    }
-  }
-  else if (e.target.className !== 'dropdown-btn' && activeDropdown) {
-    activeDropdown.classList.remove('visible');
-    activeDropdown = null;
-  }
-}
-</script>

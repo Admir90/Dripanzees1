@@ -615,3 +615,7 @@ border-radius: 20px;
 	position: absolute;
   color: red;
 }
+/* style for checkout  */
+.blob td {
+  color: #c3ac69;
+}

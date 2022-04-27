@@ -3,6 +3,52 @@
         session_start();
         $connect = mysqli_connect("localhost:3306", "mahs_mozzarelamen", "mustangs", "mahs_mozzarelamen");
     }
+    if(isset($_POST["add-to-cart"])) {
+      if(isset($_SESSION["shopping-cart"])) {
+        $item_array_id = array_column($_SESSION["shopping-cart"], "item_id");
+        if(!in_array($_GET["id"], $item_array_id))
+        {
+            $count = count($_SESSION["shopping-cart"]);
+            $item_array = array(
+              'item_id'         =>  $_GET["productId"],
+              'item_name'       =>  $_POST["hidden-name"],
+              'item_price'      =>  $_POST["hidden-price"],
+              'item_quantity'   =>  $_POST["quantity"]
+            );
+            $_SESSION["shopping-cart"] [$count] = $item_array;
+        }
+        else {
+            echo '<script>alert("Item Already Added")</script>';
+            echo '<script>window.location="index.php"</script>';
+
+        }
+      }
+      else {
+        $item_array = array (
+          'item_id'         =>  $_GET["productId"],
+          'item_name'       =>  $_POST["hidden-name"],
+          'item_price'      =>  $_POST["hidden-price"],
+          'item_quantity'   =>  $_POST["quantity"]
+        );
+        $_SESSION["shopping-cart"] [0] = $item_array;
+      }
+    }
+    if(isset($_GET["action"]))
+    {
+      if($_GET["action"] == "delete")
+      {
+        foreach($_SESSION["shopping-cart"] as $keys => $values)
+        {
+          if($values["item_id"] == $_GET["id"])
+          {
+            unset($_SESSION["shopping-cart"][$keys]);
+            echo '<script>alert("Item Removed")</script>';
+            echo '<script>window.location="index.php"</script>';
+
+          }
+        }
+      }
+    }
   ?>
 
 <!DOCTYPE html>
