@@ -123,7 +123,7 @@ include 'header.php';
                     </tr>
                   </table>
                   <form method="POST">
-                  <button class='pay-btn' type="submit">Checkout</button>
+                  <button class='pay-btn' type="submit"><a href="orderd.php">Checkout</a></button>
                 </form>
                   <button class='cancel-btn'>Cancel</button>
                 </div>

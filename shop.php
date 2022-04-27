@@ -24,6 +24,10 @@
               <img class="gfg" src="https://drive.google.com/uc?export=view&id=10QbXy0scXdaIw45coHwg5WdI-lEgc1zA" alt="Casual Wear" class="card-img-top shop-img">
               <button id="button-2"><h4 class="card-title">Monkey Northface Jacket</h4>
               <p class="card-text">$9,800</p></button> 
+              <div class="bg-modal-2">
+                <div class="modal-contents-2">
+</div>
+</div>
              </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
@@ -119,12 +123,32 @@
       
       <div class="bg-modal">
         <div class="modal-contents">
-          <img src="images/" alt="">
-          <h3>THE northface jacket!</h3>
-      <form method="POST" action="./includes/cart.inc.php">
-        <input type="number" value="1" min="1" name="quantity" max="15">
-          <button type="submit" name="cart">Add to cart!</button>
-      </form>
+        <?php
+$query = "SELECT * FROM products WHERE productId = 4 ORDER BY productId ASC";
+$result = mysqli_query($connect, $query);
+if(mysqli_num_rows($result) > 0)
+{
+  while($row = mysqli_fetch_array($result))
+    {
+?>
+<div class="product-1">
+  <form method="post" action="index.php?action=add&id=<?php echo $row["productId"]; ?>">
+  <div class="prod-img-1">
+  <h4><?php echo $row["productName"]; ?></h4>
+  <img src="<?php echo $row["productImage"]; ?>">
+    <h4><?php echo $row["productPrice"]; ?></h4>
+    <h4><?php echo $row["productDesc"]; ?></h4>
+    <input type="number" value="1" min="1" name="quantity" max="15">
+    <input type="hidden" name="hidden-name" value="<?php echo $row["productName"]; ?>">
+    <input type="hidden" name="hidden-price" value="<?php echo $row["productPrice"]; ?>">
+    <input type="submit" name="add-to-cart" value="Add to Cart">
+  </div>
+  </form>
+  <?php
+    }
+  }
+  ?>
+</div>
           <div class="close">+</div>
         </div>
       </div>
